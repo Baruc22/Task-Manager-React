@@ -3,11 +3,13 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-
+//Se obtiene la referencia al div "root"
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
+//Renderiza lo que hay entre parentesis (funcion: render)
+// App -> es el componente principal de la aplicación (es lo que se esta renderizando)
+root.render( 
   <React.StrictMode>
-    <App />
+    <App /> 
   </React.StrictMode>
 );
 
