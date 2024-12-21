@@ -1,8 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+//Añadimos Bootstrap a nuestro proyecto 
+import 'bootstrap/dist/css/bootstrap.css'; //Archivo que nos permite acceder a todos los estilos de bootstrap
+//! Importante: los estilos propios, deben ir debajo del de bootstrap para que no los sobreponga
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+
+
 //Se obtiene la referencia al div "root"
 const root = ReactDOM.createRoot(document.getElementById('root'));
 //Renderiza lo que hay entre parentesis (funcion: render)

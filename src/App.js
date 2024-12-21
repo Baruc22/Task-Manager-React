@@ -7,6 +7,7 @@ import Ejemplo1 from './hooks/Ejemplo1';
 import Ejemplo2 from './hooks/Ejemplo2';
 import MiComponenteConContexto from './hooks/Ejemplo3';
 import Ejemplo4 from './hooks/Ejemplo4';
+import GreetingStyled from './components/pure/greetingStyled';
 
 //Componente de tipo funcion
 function App() {
@@ -32,15 +33,20 @@ function App() {
         {/*<Ejemplo1></Ejemplo1>*/}
         {/*<Ejemplo2></Ejemplo2>*/}
         {/*<MiComponenteConContexto></MiComponenteConContexto>*/}
-        <Ejemplo4 nombre='Baruc'>
+
+        {/* <Ejemplo4 nombre='Baruc'>
           {/*Todo lo que hay aquí, es tratado como props.children en cualquier componente */}
-          <h3>
+          {/*<h3>
             Contenido del props.children 1
           </h3>
           <h3>
             Contenido del props.children 2
           </h3>
-        </Ejemplo4>
+        </Ejemplo4> */}
+
+        {/* Ejemplo de componente con estilos dinamicos */}
+        <GreetingStyled name="Citlali" ></GreetingStyled>
+
       </header>
     </div>
   );
