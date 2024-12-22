@@ -15,8 +15,9 @@ function App() {
   //IMPORTAMTE: Los componentes devuelven un unico elemento. (Ejemplo: Un solo div)
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+
+      {/* <header className="App-header"> */}
+        {/* <img src={logo} className="App-logo" alt="logo" /> */}
 
         {/* Componente propio Greeting.jsx */}
         {/* Se le pasa la propiedad name = "Baruc" */}
@@ -45,9 +46,11 @@ function App() {
         </Ejemplo4> */}
 
         {/* Ejemplo de componente con estilos dinamicos */}
-        <GreetingStyled name="Citlali" ></GreetingStyled>
+        {/*<GreetingStyled name="Citlali" ></GreetingStyled>*/}
+      {/* </header> */}
 
-      </header>
+      <TaskListComponent></TaskListComponent>
+
     </div>
   );
 }
