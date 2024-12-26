@@ -8,6 +8,7 @@ import Ejemplo2 from './hooks/Ejemplo2';
 import MiComponenteConContexto from './hooks/Ejemplo3';
 import Ejemplo4 from './hooks/Ejemplo4';
 import GreetingStyled from './components/pure/greetingStyled';
+import Father from './components/container/father';
 
 //Componente de tipo funcion
 function App() {
@@ -19,24 +20,24 @@ function App() {
       {/* <header className="App-header"> */}
         {/* <img src={logo} className="App-logo" alt="logo" /> */}
 
-        {/* Componente propio Greeting.jsx */}
-        {/* Se le pasa la propiedad name = "Baruc" */}
-        {/* Es un componente de tipo clase */}
+        {/* *** Componente propio Greeting.jsx *** */}
+        {/* *** Se le pasa la propiedad name = "Baruc" *** */}
+        {/* *** Es un componente de tipo clase *** */}
         {/*<Greeting name="Baruc"></Greeting>*/}
 
-        {/* Es un componente de tipo función */}
+        {/* *** Es un componente de tipo función *** */}
         {/*<GreetingF name="Baruc" ></GreetingF>*/}
 
-        {/* Componente de listado de tareas */}
+        {/* *** Componente de listado de tareas *** */}
         {/*<TaskListComponent></TaskListComponent>*/}
 
-        {/* Ejemplos de uso de HOOKS */}
+        {/* *** Ejemplos de uso de HOOKS *** */}
         {/*<Ejemplo1></Ejemplo1>*/}
         {/*<Ejemplo2></Ejemplo2>*/}
         {/*<MiComponenteConContexto></MiComponenteConContexto>*/}
 
         {/* <Ejemplo4 nombre='Baruc'>
-          {/*Todo lo que hay aquí, es tratado como props.children en cualquier componente */}
+          {/* *** Todo lo que hay aquí, es tratado como props.children en cualquier componente *** */}
           {/*<h3>
             Contenido del props.children 1
           </h3>
@@ -45,11 +46,14 @@ function App() {
           </h3>
         </Ejemplo4> */}
 
-        {/* Ejemplo de componente con estilos dinamicos */}
+        {/* *** Ejemplo de componente con estilos dinamicos *** */}
         {/*<GreetingStyled name="Citlali" ></GreetingStyled>*/}
       {/* </header> */}
 
-      <TaskListComponent></TaskListComponent>
+      {/*<TaskListComponent></TaskListComponent>*/}
+      
+      {/* *** Gestión de eventos (ejemplo de formulario) *** */}
+      <Father></Father>
 
     </div>
   );

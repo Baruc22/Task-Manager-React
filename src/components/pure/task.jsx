@@ -68,7 +68,6 @@ const TaskComponent = ({task}) => {
     return (
 
         <tr className='fw-normal'>
-
             <th>
                 <span className='ms-2'>{task.name}</span>
             </th>
