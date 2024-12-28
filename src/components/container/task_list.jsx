@@ -27,8 +27,33 @@ const TaskListComponent = () => {
         };
     }, []);
 
-    const changeCompleted = (id) => {
-        console.log('Cambiar estado de una tarea')
+    //La "task" que resibe es del componente "hijo" (task.jsx), cuando se da click.
+    //Esto gracias a que se pasa esta funcion por medio de las "props"
+    function completeTask(task){
+        console.log('Complete this Task:', task);
+        const index = tasks.indexOf(task);
+        const tempTasks = [...tasks];
+        tempTasks[index].completed = !tempTasks[index].completed;
+        //We update the state of the component with the new list and it will update the
+        //iteration of the tasks in order to show the task updated
+        setTasks(tempTasks);
+    }
+
+    function deleteTask(task){
+        console.log('Delete this Task:', task);
+        const index = tasks.indexOf(task);
+        const tempTasks = [...tasks];
+        tempTasks.splice(index,1); //(indice, num. de elmentos eliminados)
+        setTasks(tempTasks);
+
+    }
+
+    function addTask(task){
+        console.log('Add this Task:', task);
+        const index = tasks.indexOf(task);
+        const tempTasks = [...tasks];
+        tempTasks.push(task);
+        setTasks(tempTasks);
     }
 
     return (
@@ -55,7 +80,12 @@ const TaskListComponent = () => {
                             <tbody>
                                 {tasks.map((task,index) => {
                                             return(
-                                                <TaskComponent key={index} task={task} ></TaskComponent>
+                                                <TaskComponent 
+                                                    key={index} 
+                                                    task={task} 
+                                                    complete={completeTask}
+                                                    remove={deleteTask} >
+                                                </TaskComponent>
                                             )
                                         }
                                     )
@@ -64,9 +94,9 @@ const TaskListComponent = () => {
                             </tbody>    
                         </table>
                     </div>
-                    <TaskForm></TaskForm>
                 </div>
             </div>
+            <TaskForm add={addTask}></TaskForm>
         </div>
     );
 };

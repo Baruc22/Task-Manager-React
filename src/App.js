@@ -50,10 +50,10 @@ function App() {
         {/*<GreetingStyled name="Citlali" ></GreetingStyled>*/}
       {/* </header> */}
 
-      {/*<TaskListComponent></TaskListComponent>*/}
+      <TaskListComponent></TaskListComponent>
       
       {/* *** Gestión de eventos (ejemplo de formulario) *** */}
-      <Father></Father>
+      {/* <Father></Father> */}
 
     </div>
   );
