@@ -9,6 +9,7 @@ import MiComponenteConContexto from './hooks/Ejemplo3';
 import Ejemplo4 from './hooks/Ejemplo4';
 import GreetingStyled from './components/pure/greetingStyled';
 import Father from './components/container/father';
+import OptionalRender from './components/pure/optionalRender';
 
 //Componente de tipo funcion
 function App() {
@@ -50,10 +51,14 @@ function App() {
         {/*<GreetingStyled name="Citlali" ></GreetingStyled>*/}
       {/* </header> */}
 
-      <TaskListComponent></TaskListComponent>
-      
+            
       {/* *** Gestión de eventos (ejemplo de formulario) *** */}
       {/* <Father></Father> */}
+
+      {/* Ejemplos de renderizado condicional */}
+      <OptionalRender></OptionalRender>
+
+      {/* <TaskListComponent></TaskListComponent> */}
 
     </div>
   );
