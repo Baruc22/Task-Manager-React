@@ -56,9 +56,9 @@ function App() {
       {/* <Father></Father> */}
 
       {/* Ejemplos de renderizado condicional */}
-      <OptionalRender></OptionalRender>
+      {/* <OptionalRender></OptionalRender> */}
 
-      {/* <TaskListComponent></TaskListComponent> */}
+      <TaskListComponent></TaskListComponent>
 
     </div>
   );
