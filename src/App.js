@@ -62,6 +62,7 @@ function App() {
       
       {/* Ejemplos del uso de Formik y Yup */}
       {/* <LoginFormik></LoginFormik> */}
+      
       <RegisterFormik></RegisterFormik>
 
       {/* PROYECTO FINAL */}
