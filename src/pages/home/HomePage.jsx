@@ -20,9 +20,21 @@ const HomePage = () => {
         history(1); //Navega hacia adelante
     }
 
+    //--------------------------------------------
+
+
+    const navigateProps = (path) => {
+        //'?online=true' -> paso de parametro por Query Params
+        history( path + '?online=true', { state: {online: true} } );
+    }
+        
+
     return (
         <div>
             <h1>Home Page</h1>
+            <button onClick={() => navigateProps('/online-state')}>
+                Go To Page with State / Query Params
+            </button>
             <button onClick={() => navigate('/profile')}>
                 Go To Profile
             </button>
