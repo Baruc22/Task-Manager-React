@@ -17,9 +17,9 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 // App -> es el componente principal de la aplicación (es lo que se esta renderizando)
 root.render( 
   <React.StrictMode>
-    {/* <App />  */}
+    <App /> 
     {/* <AppRoutingOne/> */}
-    <AppRoutingFinal/>
+    {/* <AppRoutingFinal/> */}
   </React.StrictMode>
 );
 

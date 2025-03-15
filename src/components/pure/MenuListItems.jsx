@@ -6,13 +6,10 @@ const getIcon = (icon) => {
     switch (icon) {
         case 'HOME':
             return (<Home/>)
-            break;
         case 'TASKS':
             return (<Home/>)
-            break;
         case 'SETTINGS':
             return (<Settings/>)
-            break;
         default:
             break;
     }
