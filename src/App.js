@@ -14,6 +14,7 @@ import LoginFormik from './components/pure/forms/loginFormik';
 import RegisterFormik from './components/pure/forms/registerFormik';
 import AsyncEjample from './components/pure/AsyncEjample';
 import ObservableExample from './components/pure/ObservableExample';
+import FetchExample from './components/pure/FetchExample';
 
 //Componente de tipo funcion
 function App() {
@@ -68,7 +69,8 @@ function App() {
 
       {/* Ejemplos de procesos asíncronos */}
       {/* <AsyncEjample></AsyncEjample> */}
-      <ObservableExample></ObservableExample>
+      {/* <ObservableExample></ObservableExample> */}
+      <FetchExample></FetchExample>
 
       {/* PROYECTO FINAL */}
       {/* <TaskListComponent></TaskListComponent> */}
